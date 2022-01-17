@@ -1,0 +1,29 @@
+.services-cards-grid{
+    display: grid;
+
+    @media only screen and (min-width: 1140px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media only screen and (max-width: 1139px) and (min-width: 960px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media only screen and (max-width: 959px) and (min-width: 720px) {
+        grid-template-columns: 1fr;
+    }
+    @media only screen and (max-width: 719px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.stocks-cards-grid{
+    display: grid;
+    justify-items: center;
+    grid-gap: 60px;
+
+    @media only screen and (min-width: 960px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media only screen and (max-width: 959px) {
+        grid-template-columns: 1fr;
+    }
+}
