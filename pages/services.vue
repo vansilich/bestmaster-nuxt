@@ -59,7 +59,7 @@ export default {
     },
     fetchKey: 'servicesPage',
     async fetch() {
-        const services = await this.$axios.get('/services/all');
+        const services = await this.$axios.get('/api/services/all');
 
         let data = {};
         (services.data.data).map( item => {

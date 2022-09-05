@@ -39,7 +39,7 @@ export default {
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     plugins: [
-        { src: '~~/plugins/vue-lazy-load.js' }
+        { src: '~~/plugins/vue-lazy-load.js' },
     ],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
@@ -53,10 +53,6 @@ export default {
         'nuxt-webfontloader',
         '@nuxtjs/axios',
         '@nuxtjs/sitemap',
-        ['nuxt-gmaps', {
-            key: process.env.GOOGLE_MAP_KEY,
-            libraries: ['places'],
-        }]
     ],
 
     sitemap: {
@@ -70,7 +66,16 @@ export default {
     },
 
     axios: {
-        baseURL: process.env.API_BASE_URL,
+        proxy: true,
+    },
+
+    proxy: {
+        '/api': {
+            target: process.env.API_BASE_URL,
+            pathRewrite: {
+                '^/api/': ''
+            },
+        }
     },
 
     webfontloader: {

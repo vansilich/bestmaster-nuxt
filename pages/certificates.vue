@@ -139,7 +139,7 @@ export default {
     name: "certificates",
     fetchKey: 'servicesPage',
     async fetch() {
-        this.certificates = ( await this.$axios.get('/certificates/all') ).data;
+        this.certificates = ( await this.$axios.get('/api/certificates/all') ).data;
     },
     components: {
         CertificateCard,
@@ -179,11 +179,11 @@ export default {
 
                 //if it is electronic certificate
                 if ( id !== undefined ) {
-                    await this.$axios.$post('/certificates/purchase', { id, customer });
+                    await this.$axios.$post('/api/certificates/purchase', { id, customer });
                 }
                 //if it is paper certificate
                 else {
-                    await this.$axios.$post('/certificates/purchase/in-paper', { customer });
+                    await this.$axios.$post('/api/certificates/purchase/in-paper', { customer });
                 }
 
                 this.errors = {};
@@ -345,7 +345,7 @@ export default {
     width: 14px;
     display: none;
     transform: rotate(-180deg);
-    bottom: 70px;
+    bottom: 50px;
     z-index: 100;
 
     &:before, &:after{

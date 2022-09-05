@@ -4,7 +4,7 @@
         <div class="card-body card__content">
             <h3 class="card-body__text">{{ title }}</h3>
 
-            <img class="card-body__logo" src="~/assets/img/logo.png" alt="bestmaster-massage.ru">
+            <img class="card-body__logo" src="~/assets/img/crown-logo.png" alt="bestmaster-massage.ru">
         </div>
 
         <button class="get-btn card__get-btn" @click="$nuxt.$emit('purchaseStock', id)">

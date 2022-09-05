@@ -64,7 +64,7 @@
                     </div>
 
                     <nuxt-link class="header-nav__item" to="/" @click.native="closeMenu">
-                        <img class="header-nav__logo-img" src="~/assets/img/logo.png" alt="bestmaster-massage.ru">
+                        <img class="header-nav__logo-img" src="~/assets/img/crown-logo.png" alt="bestmaster-massage.ru">
                     </nuxt-link>
 
                     <nuxt-link to="promotions" class="header-nav__item promotions">

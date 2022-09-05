@@ -90,7 +90,7 @@
                         </div>
                         <p class="card-text__price">{{ price }} рублей</p>
                     </div>
-                    <a class="sign-up card-text__sign-up" href="https://bumpix.net/220854" target="_blank" rel="noopener">
+                    <a class="sign-up card-text__sign-up" :href="link" target="_blank" rel="noopener">
                         Записаться
                     </a>
                 </div>
@@ -116,6 +116,7 @@ export default {
             dropdownVisible: false,
             duration: 60,
             price: 3000,
+            link: '',
             isTextOverflowed: false,
             isDescriptionShowed: false,
         }
@@ -123,6 +124,7 @@ export default {
     mounted() {
         this.duration = this.variations[0].duration;
         this.price = this.variations[0].price;
+        this.link = this.variations[0].link;
 
         const observer = new IntersectionObserver( ( entries, observer ) => {
             entries.forEach( entry => {
@@ -154,6 +156,7 @@ export default {
         setCurrentSelectedVariation( variation ) {
             this.duration = variation.duration;
             this.price = variation.price;
+            this.link = variation.link;
 
             this.shouldToggleDropdown();
         },

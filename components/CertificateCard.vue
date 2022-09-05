@@ -2,7 +2,7 @@
 
     <div class="electronic-certificate">
 
-        <img class="electronic-certificate__image" :src="require(`~/assets/img/certificates/certificate_${id}.png`)" alt="bestmaster-massage.ru">
+        <img class="electronic-certificate__image" :src="require(`~/assets/img/certificates/${photo}`)" alt="bestmaster-massage.ru">
 
         <div class="electronic-certificate__bottom">
             <p class="electronic-certificate__price">
@@ -22,6 +22,7 @@ export default {
     props: {
         id: Number,
         price: Number,
+        photo: String,
     },
 }
 </script>

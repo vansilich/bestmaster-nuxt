@@ -40,7 +40,7 @@ export default {
     },
     fetchKey: 'promotionsPage',
     async fetch() {
-        this.stocks = (await this.$axios.get('/promotions/all')).data;
+        this.stocks = (await this.$axios.get('/api/promotions/all')).data;
     },
     name: "coupons",
     components: {
@@ -69,7 +69,7 @@ export default {
         async sendRequest( id, customer ) {
             try {
 
-                await this.$axios.$post('/promotions/purchase', {id, customer});
+                await this.$axios.$post('/api/promotions/purchase', {id, customer});
                 this.errors = {};
                 this.isRequestSend = true;
 

@@ -44,7 +44,7 @@ export default {
     },
     fetchKey: 'indexPage',
     async fetch() {
-        const services = await this.$axios.get('/services/index-page');
+        const services = await this.$axios.get('/api/services/index-page');
 
         let data = {};
         (services.data.data).map( item => {

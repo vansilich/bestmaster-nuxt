@@ -9,6 +9,7 @@
                 ></video>
             </div>
             <div class="tagline intro__text">
+                <img class="tagline__crown" src="~/assets/img/crown.png" alt="Bestmaster - логотип">
                 <img class="tagline__site-name" src="~/assets/img/BESTMASTER.png" alt="Bestmaster">
                 <h3 class="tagline__text">
                     Салон массажа и реабилитации в Москве. <br>
@@ -142,6 +143,15 @@ export default {
 }
 
 .tagline {
+
+    &__crown{
+        width: 150px;
+        margin-bottom: 20px;
+
+        @media only screen and (max-width: 539px) {
+            width: 120px;
+        }
+    }
 
     &__site-name {
         height: 58px;
