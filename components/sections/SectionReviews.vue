@@ -111,13 +111,20 @@ export default {
                 },
                 {
                     id: 4,
+                    photo: 'maximvale.jpg',
+                    inst_nickname: 'maximvale',
+                    link: 'https://www.instagram.com/p/CNdchjsATw-/?igshid=YmMyMTA2M2Y%3D',
+                    description: 'Восстанавливаем спину @maximvale и жизненные силы 💫'
+                },
+                {
+                    id: 5,
                     photo: 'olga__kazachenko.jpg',
                     inst_nickname: 'olga__kazachenko',
                     link: 'https://www.instagram.com/p/CDJY0uzgfp8/',
                     description: 'Мы с Димой @bestmaster.msk начинаем очередной курс его волшебного массажа 🤗 результат покажу позже🤪🍑'
                 },
                 {
-                    id: 5,
+                    id: 6,
                     photo: 'ramo_motion_.jpg',
                     inst_nickname: 'ramo_motion_',
                     link: 'https://www.instagram.com/p/CO0WEBtAGK9/',

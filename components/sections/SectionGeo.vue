@@ -63,6 +63,7 @@ export default {
 @use "~/assets/scss/abstracts/variables";
 
 .section-reviews{
+    padding: 30px 0;
 
     &__title{
         color: variables.$main-fc;

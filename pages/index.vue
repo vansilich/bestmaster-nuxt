@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="main-page">
         <section-intro></section-intro>
 
         <section-services :services="services"></section-services>
@@ -75,6 +75,11 @@ export default {
 
 <style lang="scss" scoped>
 @use "~/assets/scss/abstracts/variables";
+
+.main-page{
+    background-image: url("~/assets/img/bg-repeat.png");
+    background-size: 760px;
+}
 
 .section-not-that-all{
     display: flex;
