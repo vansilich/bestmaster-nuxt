@@ -18,8 +18,9 @@ export default {
         return {
             script: [
                 {
+                    hid: 'ymaps',
                     src: this.ymapsScriptSrc(),
-                    async: false
+                    defer: true,
                 },
             ]
         }
@@ -27,22 +28,40 @@ export default {
     data() {
         return {
             coords: [55.736311, 37.666144],
-            api_key: process.env.YANDEX_MAP_KEY,
-            lang: 'ru_RU'
+            lang: 'ru_RU',
+            mapInstance: null,
         }
     },
     mounted() {
-        ymaps.ready( this.initMaps );
+        let count = 0;
+        let awaitYmaps = setInterval(() => {
+            count++;
+
+            if (window.ymaps !== undefined && window.ymaps.ready !== undefined) {
+
+                clearInterval(awaitYmaps);
+                window.ymaps.ready( this.initMaps );
+            }
+            
+            if(count > 5){
+                clearInterval(awaitYmaps);
+            }
+        }, 200);
+    },
+    beforeDestroy() {
+        if(window.ymaps !== undefined){
+            this.mapInstance.destroy();
+        }
     },
     methods: {
         initMaps(){
-            const map = new ymaps.Map( this.$refs.map, {
+            this.mapInstance = new window.ymaps.Map( this.$refs.map, {
                 center: this.coords,
                 zoom: 18
             });
 
-            map.geoObjects
-                .add(new ymaps.Placemark(this.coords, {
+            this.mapInstance.geoObjects
+                .add(new window.ymaps.Placemark(this.coords, {
                     balloonContent: 'Москва, Марксистская улица, 7'
                 }, {
                     preset: 'islands#redIcon',
@@ -50,7 +69,7 @@ export default {
         },
         ymapsScriptSrc(){
             const url = new URL('https://api-maps.yandex.ru/2.1');
-            url.searchParams.append('apikey', this.api_key);
+            url.searchParams.append('apikey', this.$config.YANDEX_MAP_KEY);
             url.searchParams.append('lang', this.lang);
 
             return url.toString();

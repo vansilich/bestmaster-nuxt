@@ -11,6 +11,7 @@ export default {
 
     publicRuntimeConfig: {
         base_url: process.env.BASE_URL,
+        YANDEX_MAP_KEY: process.env.YANDEX_MAP_KEY
     },
 
     head: {
@@ -91,11 +92,6 @@ export default {
     },
 
     render: {
-        // http2: {
-        //     push: true,
-        //     pushAssets: (req, res, publicPath, preloadFiles) => preloadFiles
-        //     .map(f => `<${publicPath}${f.file}>; rel=preload; as=${f.asType}`)
-        //   },
         compressor: false,
         resourceHints: false,
         etag: false,
