@@ -57,6 +57,7 @@ export default {
     justify-content: space-around;
 
     &__media{
+        object-fit: cover;
         width: 320px;
         height: 480px;
         border-radius: 10px;

@@ -12,7 +12,7 @@
                 <img class="tagline__crown" src="~/assets/img/crown.png" alt="Bestmaster - логотип">
                 <img class="tagline__site-name" src="~/assets/img/BESTMASTER.png" alt="Bestmaster">
                 <h3 class="tagline__text">
-                    Салон массажа и реабилитации в Москве. <br>
+                    Студия массажа и реабилитации в Москве. <br>
                 </h3>
                 <h3 class="tagline__text">
                     Лучшая помощь Вашему здоровью!

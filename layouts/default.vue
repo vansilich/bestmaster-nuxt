@@ -43,6 +43,11 @@
                                             </nuxt-link>
                                         </li>
                                         <li class="menu-wrapper__item" @click="toggleMenu">
+                                            <nuxt-link to="interior" class="menu-link">
+                                                Интерьер
+                                            </nuxt-link>
+                                        </li>
+                                        <li class="menu-wrapper__item" @click="toggleMenu">
                                             <nuxt-link to="promotions" class="menu-link">
                                                 Акции
                                             </nuxt-link>
@@ -426,7 +431,8 @@ export default {
 .main-menu {
     left: 0;
     position: absolute;
-    background-color: white;
+    background-image: url(/_nuxt/assets/img/bg-repeat.png);
+    background-size: 470px;
     z-index: 101;
     height: 100%;
     box-shadow: 0 0 17px 17px rgb(34 60 80 / 18%);
@@ -487,7 +493,7 @@ export default {
 
 .menu-link{
     display: block;
-    color: #000000;
+    color: #ffffff;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
     padding: 10px 0 10px 40px;
@@ -495,8 +501,8 @@ export default {
     text-decoration: none;
 
     &:hover{
-        color: #ffffff;
-        background-color: #202020;
+        color: #000000;
+        background-color: #ffffff;
     }
 }
 
