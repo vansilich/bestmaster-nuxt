@@ -431,7 +431,7 @@ export default {
 .main-menu {
     left: 0;
     position: absolute;
-    background-image: url(/_nuxt/assets/img/bg-repeat.png);
+    background-image: url("~/assets/img/bg-repeat.png");
     background-size: 470px;
     z-index: 101;
     height: 100%;
