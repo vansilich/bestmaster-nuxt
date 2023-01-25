@@ -62,9 +62,6 @@
 
                 <h2 class="galery-title">Галерея</h2>
 
-                <style>
-                    
-                </style>
                 <client-only>
                     <vue-slick-carousel class="studio-galery" v-bind="sliderSettings">
 

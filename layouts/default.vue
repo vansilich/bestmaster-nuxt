@@ -62,6 +62,11 @@
                                                 Контакты
                                             </nuxt-link>
                                         </li>
+                                        <li class="menu-wrapper__item" @click="toggleMenu">
+                                            <nuxt-link to="partnership" class="menu-link">
+                                                Сотрудничество
+                                            </nuxt-link>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>

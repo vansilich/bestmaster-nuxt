@@ -24,7 +24,7 @@
                     </li>
                     <li class="activities-list__item">
                         <span class="activities-list__dot"></span>
-                        <p class="activities-list__text">Кинезиоейпирование тела и лица</p>
+                        <p class="activities-list__text">Кинезиотейпирование тела и лица</p>
                     </li>
                     <li class="activities-list__item">
                         <span class="activities-list__dot"></span>
