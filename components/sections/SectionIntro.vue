@@ -5,6 +5,7 @@
                 <video ref="video" class="intro__video"
                        :poster="require('~/assets/img/posters/BestMasterPromo.jpg')"
                        :data-src="require('~/assets/video/BestMasterPromo.mp4')"
+                       :data-mobile-src="require('~/assets/video/BestMasterPromoMobile.mp4')"
                        loop muted autoplay playsinline
                 ></video>
             </div>
@@ -24,10 +25,15 @@
 </template>
 
 <script>
+import {isMobileOrTablet} from '~/shared/utils/browser'
 export default {
     name: "SectionIntro",
     mounted() {
-        this.$refs.video.src = this.$refs.video.getAttribute('data-src');
+        if(isMobileOrTablet()){
+            this.$refs.video.src = this.$refs.video.getAttribute('data-mobile-src');
+        } else {
+            this.$refs.video.src = this.$refs.video.getAttribute('data-src');
+        }
     }
 }
 </script>

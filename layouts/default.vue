@@ -131,7 +131,7 @@
 
 <script>
 
-import ogImage from '~/assets/img/crown.png'
+import ogImage from '~/assets/img/meta/og-image.jpg'
 
 export default {
     layout: "default",
