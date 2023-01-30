@@ -131,6 +131,8 @@
 
 <script>
 
+import ogImage from '~/assets/img/crown.png'
+
 export default {
     layout: "default",
     head () {
@@ -185,7 +187,8 @@ export default {
                     name: 'viewport',
                     content: 'width=device-width, initial-scale=1, maximum-scale=1 shrink-to-fit=no'
                 },
-                { hid: 'description', name: 'description', content: 'Главная' }
+                { hid: 'description', name: 'description', content: 'Главная' },
+                { hid: 'og:image', property: 'og:image', content: this.$config.base_url + ogImage }
             ]
         }
     }
