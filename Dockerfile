@@ -15,7 +15,7 @@ RUN apk --update --no-cache add \
     zlib-dev libtool nasm
 
 # copy the app, note .dockerignore
-COPY ./nuxt /var/www/nuxt
+COPY ./ /var/www/nuxt
 
 RUN npm i postcss
 RUN npm i
