@@ -87,6 +87,11 @@
                                 :src="require(`~/assets/img/partnership/30.jpg`)"
                                 alt="Фото студии">
                         </div>
+                        <div class="studio-galery__item">
+                            <img class="studio-galery__image"
+                                :src="require(`~/assets/img/partnership/40.jpg`)"
+                                alt="Фото студии">
+                        </div>
 
                         <template #prevArrow>
                             <div class="studio-galery__arrow studio-galery__arrow-prev">

@@ -3,7 +3,8 @@
         <div class="intro">
             <div class="intro__media-wrapper">
                 <video ref="video" class="intro__video"
-                       :poster="require('~/assets/img/posters/BestMasterPromo.jpg')"
+                       :data-poster="require('~/assets/img/posters/BestMasterPromo.jpg')"
+                       :data-poster-mobile="require('~/assets/img/posters/BestMasterPromoMobile.jpg')"
                        :data-src="require('~/assets/video/BestMasterPromo.mp4')"
                        :data-mobile-src="require('~/assets/video/BestMasterPromoMobile.mp4')"
                        loop muted autoplay playsinline
@@ -31,8 +32,10 @@ export default {
     mounted() {
         if(isMobileOrTablet()){
             this.$refs.video.src = this.$refs.video.getAttribute('data-mobile-src');
+            this.$refs.video.poster = this.$refs.video.getAttribute('data-poster-mobile');
         } else {
             this.$refs.video.src = this.$refs.video.getAttribute('data-src');
+            this.$refs.video.poster = this.$refs.video.getAttribute('data-poster');
         }
     }
 }

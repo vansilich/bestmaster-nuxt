@@ -3,6 +3,11 @@
     <section class="wrapper-outer section-services">
         <div class="section-inner">
             <div class="services">
+
+                <a class="services__free-consultations" href="https://t.me/bestmaster_msk" target="_blank"  rel="noopener">
+                    Бесплатная консультация
+                </a>
+
                 <h2 class="services__title section-heading">Услуги</h2>
 
                 <p class="services__info">* - вакуумные банки и тейпирование входят в стоимость.</p>
@@ -49,6 +54,21 @@ export default {
 .services {
     &__title {
         color: variables.$main-fc;
+    }
+
+    &__free-consultations{
+        box-sizing: border-box;
+        margin: 45px auto;
+        display: block;
+        width: fit-content;
+        text-decoration: underline;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 10px;
+        padding: 15px 25px;
+        color: #EDC300;
+        font-size: 21px;
+        font-weight: 500;
     }
 
     &__info{
