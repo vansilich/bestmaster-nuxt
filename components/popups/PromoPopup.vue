@@ -38,14 +38,6 @@
                         </div>
                         <validation-errors :errors="errorFor('customer.phone')" style="color: #000000; margin: 10px 0;"></validation-errors>
 
-                        <div class="form__item">
-                            <label class="form__label" for="email">Email:</label>
-                            <input class="form__input" id="email" type="email" v-model.trim="customer.email"
-                                   :class="[{ 'error': errorFor('customer.email') }]"
-                                   @input="$nuxt.$emit('removeError', 'customer.email')">
-                        </div>
-                        <validation-errors :errors="errorFor('customer.email')" style="color: #000000; margin: 10px 0;"></validation-errors>
-
                         <button class="form__submit" @click="submit">
                             отправить
                         </button>
@@ -110,7 +102,6 @@ export default {
             customer: {
                 name: '',
                 phone: '',
-                email: '',
             }
         }
     },
