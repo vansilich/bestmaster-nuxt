@@ -31,6 +31,10 @@
                     <ul class="interior-desc-list">
                         <li class="interior-desc-list__item">
                             <span class="interior-desc-list__dot"></span>
+                            <p class="interior-desc-list__text">BE YOURSELF FAM WORKSHOPS</p>
+                        </li>
+                        <li class="interior-desc-list__item">
+                            <span class="interior-desc-list__dot"></span>
                             <p class="interior-desc-list__text">WORLDWIDE DANCE CHAMP</p>
                         </li>
                         <li class="interior-desc-list__item">

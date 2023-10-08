@@ -478,6 +478,7 @@ export default {
 .paper-certificates-slider{
     position: relative;
     margin-bottom: 80px;
+    box-shadow: 0px 0px 20px 2px #646464;
 
     &__image{
         object-fit: cover;
@@ -506,6 +507,7 @@ export default {
 
     @media only screen and (min-width: 960px) {
         width: 450px;
+        height: 450px;
 
         &__image{
             width: 450px;
@@ -514,6 +516,7 @@ export default {
     }
     @media only screen and (max-width: 959px) and (min-width: 720px) {
         width: 350px;
+        height: 350px;
 
         &__image{
             width: 350px;
@@ -522,6 +525,7 @@ export default {
     }
     @media only screen and (max-width: 719px) {
         width: 300px;
+        height: 300px;
         margin-bottom: 100px;
         order: 1;
 

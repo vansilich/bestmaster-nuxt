@@ -6,7 +6,7 @@
                 <video ref="video" class="service-card__media"
                        :poster="require(`~/assets/img/posters/${this.video}.jpg`)"
                        :data-src="require(`~/assets/video/job/${this.video}.mp4`)"
-                       muted loop playsinline>
+                       muted loop playsinline type="video/mp4">
                 </video>
                 <div class="preview-player__controls" @click="toggleVideo()">
                     <svg ref="playBtn" class="preview-player__play-btn" width="70" height="75" viewBox="0 0 70 75"
