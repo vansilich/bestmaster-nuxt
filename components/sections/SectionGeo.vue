@@ -5,7 +5,7 @@
         <div id="map" ref="map">
         </div>
 
-        <p class="how-to address">Москва, Марксистская улица, 7</p>
+        <p class="how-to address">Москва, Земляной вал 27/2</p>
 
     </section>
 </template>
@@ -27,7 +27,7 @@ export default {
     },
     data() {
         return {
-            coords: [55.736311, 37.666144],
+            coords: [55.758640, 37.658958],
             lang: 'ru_RU',
             mapInstance: null,
         }
@@ -57,12 +57,12 @@ export default {
         initMaps(){
             this.mapInstance = new window.ymaps.Map( this.$refs.map, {
                 center: this.coords,
-                zoom: 18
+                zoom: 17
             });
 
             this.mapInstance.geoObjects
                 .add(new window.ymaps.Placemark(this.coords, {
-                    balloonContent: 'Москва, Марксистская улица, 7'
+                    balloonContent: 'Москва, Земляной вал 27/2'
                 }, {
                     preset: 'islands#redIcon',
                 }))
