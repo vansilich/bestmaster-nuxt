@@ -124,13 +124,19 @@ export default {
                     description: 'Мы с Димой @bestmaster.msk начинаем очередной курс его волшебного массажа 🤗 результат покажу позже🤪🍑'
                 },
                 {
-                    id: 6,
+                    id: 8,
                     photo: 'ramo_motion_.jpg',
                     inst_nickname: 'ramo_motion_',
                     link: 'https://www.instagram.com/p/CO0WEBtAGK9/',
                     description: 'Разобрал и собрал ! Теперь как новый спасибо 🙏)'
                 },
-
+                {
+                    id: 9,
+                    photo: 'vboldin.jpg',
+                    inst_nickname: 'v.boldin',
+                    link: 'https://www.instagram.com/p/Cxe20r4tJWg/?igsh=MXdqMG9mNXdydzhhag==',
+                    description: 'Восстанавливаем спину @v.boldin'
+                },
             ]
         }
     }
