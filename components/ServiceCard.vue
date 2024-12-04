@@ -88,7 +88,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="card-text__price">{{ price }} рублей</p>
+                        <p class="card-text__price">{{ price }} ₽</p>
                     </div>
                     <a class="sign-up card-text__sign-up" :href="link" target="_blank" rel="noopener">
                         Записаться
