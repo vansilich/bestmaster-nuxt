@@ -43,10 +43,6 @@
                         </li>
                         <li class="interior-desc-list__item">
                             <span class="interior-desc-list__dot"></span>
-                            <p class="interior-desc-list__text">EXO BATTLE</p>
-                        </li>
-                        <li class="interior-desc-list__item">
-                            <span class="interior-desc-list__dot"></span>
                             <p class="interior-desc-list__text">Открытая лига Единоборств</p>
                         </li>
                         <li class="interior-desc-list__item">
@@ -108,11 +104,6 @@
                         <div class="studio-galery__item">
                             <img class="studio-galery__image"
                                 :src="require(`~/assets/img/partnership/30.jpg`)"
-                                alt="Фото студии">
-                        </div>
-                        <div class="studio-galery__item">
-                            <img class="studio-galery__image"
-                                :src="require(`~/assets/img/partnership/40.jpg`)"
                                 alt="Фото студии">
                         </div>
 
