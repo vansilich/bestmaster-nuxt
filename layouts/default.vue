@@ -77,9 +77,7 @@
                         <img class="header-nav__logo-img" src="~/assets/img/crown-logo.png" alt="bestmaster-massage.ru">
                     </nuxt-link>
 
-                    <nuxt-link to="promotions" class="header-nav__item promotions">
-                        Акции
-                    </nuxt-link>
+                    <div class="header-nav__item"></div>
                 </nav>
             </div>
         </header>
@@ -512,13 +510,6 @@ export default {
         color: #000000;
         background-color: #ffffff;
     }
-}
-
-.promotions{
-    background-color: #fff;
-    color: variables.$third-fc;
-    text-decoration: none;
-    align-items: center;
 }
 
 </style>

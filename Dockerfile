@@ -17,7 +17,6 @@ RUN apk --update --no-cache add \
 # copy the app, note .dockerignore
 COPY ./ /var/www/nuxt
 
-RUN npm i postcss
 RUN npm i
 
 # expose 3000 on container
